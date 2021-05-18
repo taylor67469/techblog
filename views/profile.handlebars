@@ -22,7 +22,13 @@
       </div>
     </form>
   </div>
-
+<script>
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+    myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+    })
+    </script>
   {{#if projects.length}}
   <div class="col-md-6 project-list">
     <h3>Current Posts:</h3>
